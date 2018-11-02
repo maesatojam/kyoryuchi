@@ -68,6 +68,9 @@
     // @include max-screen($bp-tablet) {
     //   width: 55%;
     // }
+    li{
+      text-align: center;
+    }
     @include max-screen($bp-tablet) {
       width: 100%;
       padding: 0;
@@ -76,7 +79,6 @@
         margin-bottom: 25px;
         @include max-screen($bp-mobile) {
           width: 50%;
-          text-align: center;
         }
       }
     }
@@ -87,6 +89,7 @@
       -ms-filter: grayscale(100%) brightness(0.4);
       filter: grayscale(100%) brightness(0.4);
       transition: 0.3s;
+      margin-bottom: 10px;
       &:hover{
         -webkit-filter: grayscale(0%) brightness(1);
         -moz-filter: grayscale(0%) brightness(1);

@@ -3709,7 +3709,7 @@ ul.icon-items {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    padding: 13px 18px; }
+    padding: 13px 20px 14px; }
     @media screen and (max-width: 1024px) {
       .gnav a {
         padding: 0; } }
@@ -4171,6 +4171,8 @@ body.drawer {
     flex-wrap: wrap;
     width: 65%;
     padding: 20px  0px 20px 40px; }
+    .top_spot_link ul li {
+      text-align: center; }
     @media screen and (max-width: 1024px) {
       .top_spot_link ul {
         width: 100%;
@@ -4180,8 +4182,7 @@ body.drawer {
           margin-bottom: 25px; } }
     @media screen and (max-width: 1024px) and (max-width: 767px) {
       .top_spot_link ul li {
-        width: 50%;
-        text-align: center; } }
+        width: 50%; } }
 
     .top_spot_link ul img {
       -webkit-filter: grayscale(100%) brightness(0.4);
@@ -4189,7 +4190,8 @@ body.drawer {
       -o-filter: grayscale(100%) brightness(0.4);
       -ms-filter: grayscale(100%) brightness(0.4);
       filter: grayscale(100%) brightness(0.4);
-      transition: 0.3s; }
+      transition: 0.3s;
+      margin-bottom: 10px; }
       .top_spot_link ul img:hover {
         -webkit-filter: grayscale(0%) brightness(1);
         -moz-filter: grayscale(0%) brightness(1);
