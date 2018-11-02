@@ -52,16 +52,16 @@
       text-decoration: none;
     }
   }
-  @include max-screen($bp-mobile) {
-    font-size: 2.4rem;
-    span{
-      font-size: 1.2rem;
-    }
-  }
   @include max-screen($bp-tablet) {
     font-size: 2.6rem;
     span{
       font-size: 1.4rem;
+    }
+  }
+  @include max-screen($bp-mobile) {
+    font-size: 2.4rem;
+    span{
+      font-size: 1.2rem;
     }
   }
 }
@@ -106,6 +106,7 @@ display: none;
   @include max-screen($bp-tablet) {
     border: none!important;
     width: 50px;
+    background: transparent!important;
   }
 }
 .goog-te-menu-value{
@@ -309,7 +310,6 @@ display: none;
   }
 }
 .gnav-wrap{
-  padding: 13px;
   @include max-screen($bp-tablet) {
     padding:40px 13px;
   }
@@ -327,9 +327,13 @@ display: none;
     position: relative;
     display: inline-block;
     text-decoration: none;
+    padding: 13px 18px;
+    @include max-screen($bp-tablet) {
+      padding: 0;
+    }
     &::after {
       position: absolute;
-      bottom: -13px;
+      bottom: 0;
       left: 0;
       content: '';
       width: 100%;

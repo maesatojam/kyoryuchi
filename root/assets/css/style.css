@@ -3516,16 +3516,16 @@ ul.icon-items {
     transition: 0.3s; }
     .logo a:hover {
       text-decoration: none; }
-  @media screen and (max-width: 767px) {
-    .logo {
-      font-size: 2.4rem; }
-      .logo span {
-        font-size: 1.2rem; } }
   @media screen and (max-width: 1024px) {
     .logo {
       font-size: 2.6rem; }
       .logo span {
         font-size: 1.4rem; } }
+  @media screen and (max-width: 767px) {
+    .logo {
+      font-size: 2.4rem; }
+      .logo span {
+        font-size: 1.2rem; } }
 
 .head_top_right {
   position: absolute;
@@ -3564,7 +3564,8 @@ ul.icon-items {
   @media screen and (max-width: 1024px) {
     .goog-te-gadget-simple {
       border: none !important;
-      width: 50px; } }
+      width: 50px;
+      background: transparent !important; } }
 
 .goog-te-menu-value::before {
   content: "language";
@@ -3691,11 +3692,9 @@ ul.icon-items {
     .nav {
       background: transparent; } }
 
-.gnav-wrap {
-  padding: 13px; }
-  @media screen and (max-width: 1024px) {
-    .gnav-wrap {
-      padding: 40px 13px; } }
+@media screen and (max-width: 1024px) {
+  .gnav-wrap {
+    padding: 40px 13px; } }
 
 .gnav {
   width: 70%;
@@ -3709,10 +3708,14 @@ ul.icon-items {
   .gnav a {
     position: relative;
     display: inline-block;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 13px 18px; }
+    @media screen and (max-width: 1024px) {
+      .gnav a {
+        padding: 0; } }
     .gnav a::after {
       position: absolute;
-      bottom: -13px;
+      bottom: 0;
       left: 0;
       content: '';
       width: 100%;
