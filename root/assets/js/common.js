@@ -2,34 +2,6 @@ $(function() {
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
 
-  // 768px以上のときdevice-widthを書き換え
-  // var metalist = document.getElementsByTagName('meta');
-  // for (var i = 0; i < metalist.length; i++) {
-  //   var name = metalist[i].getAttribute('name');
-  //   if (name && name.toLowerCase() === 'viewport') {
-  //     if (window.innerWidth >= 768) {
-  //       metalist[i].setAttribute('content', 'width=1200');
-  //     } else {
-  //       metalist[i].setAttribute('content', 'width=device-width,initial-scale=1.0,minimum-scale=1.0');
-  //     }
-  //   }
-  // }
-
-  // laoding
-  // $('#loader-wrap ,.loader').height(windowHeight).css('display', 'block');
-  // $(window).load(function() {
-  //   $('#loader-wrap').delay(600).fadeOut(500);
-  //   $('#loader').delay(400).fadeOut(200);
-  //   $('.l-wrapper').css('opacity', '1');
-  // });
-
-  //10秒たったら強制的にロード画面を非表示
-  // setTimeout(function(){
-  //   $('#wrapper').css('opacity','1');
-  //   $('#loader-wrap').delay(600).fadeOut(500);
-  //   $('#loader').delay(400).fadeOut(200);
-  // },10000);
-
 
 // トップEVENTスライダー
 $(document).on('ready', function() {
@@ -55,42 +27,6 @@ $(document).on('ready', function() {
     ]
   });
 });
-
-
-
-  // drawer
-  // $('.drawer').drawer({
-  //   class: {
-  //     nav: 'drawer-nav',
-  //       toggle: 'drawer-toggle',
-  //       overlay: 'drawer-overlay',
-  //       open: 'drawer-open',
-  //       close: 'drawer-close',
-  //       dropdown: 'drawer-dropdown'
-  //   },
-  //   iscroll: {
-  //     mouseWheel: true,
-  //     preventDefault: false
-  //   },
-  //   showOverlay: true
-  // });
-
-  // pc search button
-  // $('.header-nav-search').on('click', function() {
-  //   $('.header-pc-search-wrap').slideToggle(function() {
-  //     if ($(this).is(':visible')) {
-  //       $('.contents').on('click', function() {
-  //         $('.header-pc-search-wrap').slideUp();
-  //       });
-  //     }
-  //   });
-  // });
-  // $('.header-nav-search').on('click', function() {
-  //   // $(this).toggleClass("active");
-  //   $(this).slideToggle();
-  //   $('.header-pc-search-wrap').slideToggle();
-  //   $('.header-pc-search-wrap').toggleClass("active");
-  // });
 
 
 
@@ -158,5 +94,68 @@ $(document).on('ready', function() {
     });
 
   });
+
+
+
+
+  /*▼ SNSシェアの設定*/
+  // SNSの各種カウントを実装するためのjavascript。
+  // jqueryとgoogleアナリティクスのロード完了が前提のコードなので注意。
+  /**
+   * SNSシェアボタンを指定された要素の下に埋め込む
+   * @param shareUrl シェアするUrl。og:shareUrlの値と一緒にすることをオススメ
+   * @param description ツイート本文などに埋め込む文言
+   */
+  var shareUrl  = location.href;
+  var description = document.title;//タイトル
+
+  	function setSnsShare(shareUrl, description) {
+  		var shareUrl  = location.href;
+  		var description = document.title;
+  	    setTwitterLink(".twitter_back.share_btn", shareUrl,description);
+  	    setFacebookLink(".facebook_back.share_btn", shareUrl, description);
+  	    setLineLink(".line_back.share_btn", shareUrl, description);
+  	}
+
+
+  	function setTwitterLink(shareSelector, shareUrl, description) {
+  	    $(shareSelector).attr("href", "https://twitter.com/share?shareUrl=" + shareUrl + "&text=" + encodeURIComponent(description));
+  	    setShareEvent(shareSelector, 'Twitter', shareUrl);
+  	}
+
+
+  	function setFacebookLink(shareSelector, shareUrl, description) {
+  	    $(shareSelector).attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + shareUrl + "&t=" + encodeURIComponent(description));
+  	    setShareEvent(shareSelector, 'Facebook', shareUrl);
+  	}
+
+  	function setLineLink(shareSelector, shareUrl, description) {
+  	    $(shareSelector).attr("href", "http://line.me/R/msg/text/?" + encodeURIComponent(description + " " + shareUrl));
+  	    setShareEvent(shareSelector, 'LINE', shareUrl);
+  	}
+  	setSnsShare();
+  /**
+   *  シェアボタン押下時にGoogleアナリティクスへイベントを送信する
+   *  @param selector イベントを付与するセレクタ
+   *  @param snsName SNSの名前（Googleアナリティクス上の表示に使われる）
+   *  @param shareUrl シェア対象のURL（Googleアナリティクス上の表示に使われる）
+   */
+  function setShareEvent(selector, snsName, shareUrl) {
+      $(selector).on('click', function(e){
+          var current = this;
+          //　*** Googleアナリティクスにイベント送らないなら、以下のコードは不要 ***
+          // 'share'の文字列は任意に変えてもよい（Googleアナリティクス上の表示文字列として使われる）
+          // 'nonInteraction' : 1にしないと、直帰率がおかしくなる（イベント発行したユーザーは直帰扱いでなくなる）ので注意
+          ga('send', 'social', snsName, 'share', shareUrl, {
+              'nonInteraction': 1
+          });
+          // *** Googleアナリティクス送信ここまで ****
+
+          // このあたりは適当に書き換えて下さい
+          window.open(current.href, '_blank', 'width=600, height=600, menubar=no, toolbar=no, scrollbars=yes');
+          e.preventDefault();
+      });
+  }
+  /*▲ SNSシェアの設定*/
 
 });
