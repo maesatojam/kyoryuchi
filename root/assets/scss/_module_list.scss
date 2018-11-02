@@ -1,0 +1,47 @@
+// list --------------------
+
+.m-horizontal-dl {
+  margin-bottom: 2em;
+  dl {
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
+  dt {
+    float: left;
+    padding-right: 1em;
+    width: calc(25% + 1em);
+    font-weight: bold;
+  }
+  dd {
+    overflow: auto;
+  }
+}
+
+.m-attention-wrap-list {
+  font-size: 1.4rem;
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+    &:before {
+      content: '※';
+    }
+  }
+}
+
+.m-dot-wrap-list {
+  li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    text-indent: -1em;
+    &:before {
+      content: '・';
+    }
+  }
+}
+
+.m-ol-wrap-list {
+  padding-left: 2.5em;
+  li {
+    list-style-type: decimal;
+  }
+}

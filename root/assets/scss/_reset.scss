@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  word-wrap: break-word;
+  word-break: normal;
+  font-style: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  letter-spacing: 0.01em;
+
+  font-feature-settings: "palt";
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}

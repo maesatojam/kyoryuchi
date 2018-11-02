@@ -1,0 +1,28 @@
+// breadcrumbs --------------------
+
+.m-breadcrumbs {
+  padding: 10px 0;
+  ul {
+    overflow: hidden;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    &:after {
+      margin: 0 0.7em;
+
+      @include fa('\f105');
+    }
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+    a {
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

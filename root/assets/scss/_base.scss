@@ -1,0 +1,59 @@
+html {
+  font-size: 10px;
+
+  @include max-screen($bp-mobile) {
+    font-size: 8px;
+  }
+}
+body {
+  color: $color-black;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: $font-base;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+  transition: 0.3s;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+  img {
+    transition: opacity 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  &:hover,:active {
+    color: $color-brown;
+    // text-decoration: underline;
+    img {
+      opacity: 0.6;
+    }
+  }
+}
+
+
+
+img{
+  max-width: 100%;
+}
+
+.contents {
+  p {
+    margin-bottom: 1.7em;
+  }
+  figure {
+    margin-bottom: 1.7em;
+  }
+  figcaption {
+    margin-top: 0.5em;
+    font-size: 1.4rem;
+  }
+  figure {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

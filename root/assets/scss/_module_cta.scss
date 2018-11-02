@@ -1,0 +1,88 @@
+// cta --------------------
+
+.section-cta {
+  padding: 40px 0;
+}
+
+.cta {
+  margin: 0 auto;
+  margin-bottom: 4em;
+  padding: 30px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: $color-light-blue;
+  ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  li {
+    width: 30%;
+
+    @include max-screen($bp-tablet) {
+      margin-bottom: 20px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .m-btn {
+    padding: 5px;
+    width: 100%;
+  }
+  p {
+    margin-bottom: 5px;
+
+    @include max-screen($bp-tablet) {
+      text-align: center;
+    }
+  }
+}
+.m-btn-cta-tel {
+  border: 3px solid $color-light-gray;
+  background: none;
+  color: $color-gray;
+  span {
+    display: inline-block;
+  }
+  .tel-no {
+    letter-spacing: 0.1em;
+    font-size: 3.2rem;
+    font-family: $font-oswald;
+    line-height: 1.2;
+    &:before {
+      padding-right: 0.1em;
+      color: #EB8686;
+
+      @include fa('\f095')
+    }
+  }
+  .tel-time {
+    font-size: 1.4rem;
+  }
+}
+.m-btn-cta-reserve {
+  border: 3px solid $color-blue;
+  background-color: $color-white;
+  color: $color-blue;
+  font-size: 2.2rem;
+  span {
+    display: inline-block;
+    line-height: 3em;
+  }
+  &:before {
+    @include fa('\f0e0')
+  }
+}
+.m-btn-cta-access {
+  background-color: $color-blue;
+  color: $color-white;
+
+  @extend .m-btn-cta-reserve ;
+  &:before {
+    @include fa('\f041')
+  }
+}

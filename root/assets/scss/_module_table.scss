@@ -1,0 +1,54 @@
+// table --------------------
+
+.m-table {
+  margin-bottom: 2em;
+  table {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  th,td {
+    padding: 10px 0.7em;
+    vertical-align: middle;
+    text-align: left;
+  }
+  th {
+    font-weight: bold;
+  }
+  td {
+    min-width: 33%;
+  }
+}
+
+.m-table-blue {
+  tr {
+    border-top: 1px dotted $color-blue;
+    &:last-child {
+      border-bottom: 1px dotted $color-blue;
+    }
+  }
+}
+
+.m-table-black {
+  tr {
+    border-bottom: 1px dotted $color-gray;
+  }
+}
+
+.m-table-mono {
+  table {
+    border : 1px solid $color-light-gray;
+  }
+  thead {
+    background-color: $color-light-gray;
+    color: $color-white;
+    th {
+      border-right : 1px solid $color-white;
+      &:last-child {
+        border-right:0;
+      }
+    }
+  }
+  td {
+    border : 1px solid $color-light-gray;
+  }
+}

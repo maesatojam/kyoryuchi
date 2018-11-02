@@ -1,0 +1,118 @@
+// card --------------------
+
+.m-card {
+  position: relative;
+  margin-bottom: 60px;
+  padding: 20px;
+  padding-bottom: 20px;
+  border: 3px solid $color-light-gray2;
+  border-radius: 10px;
+
+  @include max-screen($bp-mobile){
+    margin-bottom: 30px;
+  }
+}
+
+// ノーマル
+.card-normal {
+  .card-meta {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &>* {
+      margin-bottom: 1em;
+    }
+    time {
+      font-weight: 600;
+    }
+  }
+  p {
+    &:first-of-type {
+      font-weight: 600;
+    }
+    &:nth-of-type(2) a{
+      font-weight: 400;
+    }
+  }
+}
+
+// ブログ表示
+.card-blog {
+  margin-bottom: 80px;
+  padding: 0;
+
+  @include max-screen($bp-mobile) {
+    margin-bottom: 60px;
+  }
+  .radius {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  p,figure {
+    margin-bottom: 1em;
+  }
+  .m-card-meta {
+    padding: 10px 10px 20px;
+  }
+}
+
+// スクロール有
+.card-list {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  ul {
+    overflow-y: scroll;
+    height: 300px;
+
+    @include max-screen($bp-mobile) {
+      height: auto;
+    }
+  }
+  li {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 1em;
+    text-align: left;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .m-card-meta {
+    margin-right: 1em;
+    width: 8em;
+  }
+  p {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.m-card-tag {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  padding: 0 10px;
+  border-radius: 2px;
+  background-color: $color-blue;
+  font-weight: bold;
+  font-size: 1.2rem;
+  a {
+    color: $color-white;
+  }
+  &.recruit {
+    background-color: $color-pink;
+  }
+  &.author {
+    background-color: $color-pink;
+  }
+  &.news {
+    background-color: $color-dark-blue;
+  }
+}

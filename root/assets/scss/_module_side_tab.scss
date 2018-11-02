@@ -1,0 +1,55 @@
+
+
+// サイドタブ　ーーーーーーーーーーーーーーーーーー
+.side_tab{
+  position: fixed;
+  right: 0;
+  top: 30px;
+  z-index: 9999;
+  @include max-screen($bp-tablet) {
+    visibility: hidden;
+  }
+}
+.side_tab_in{
+  position: relative;
+}
+.map_link{
+  position: absolute;
+  right: -160px;
+  transition: 0.4s;
+  &:hover{
+    right: -10px;
+  }
+  a{
+    background: $color-dark-red;
+    padding: 8px 25px 10px 15px;
+    border-radius: 10px;
+    display: block;
+    color: $color-white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    width: 218px;
+  }
+}
+.share{
+  background: $color-navy;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 0px;
+  top: 90px;
+  width: 58px;
+  > *{
+    display: block;
+    margin-bottom: 17px;
+  }
+  span{
+    display: block;
+    color: $color-white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+}

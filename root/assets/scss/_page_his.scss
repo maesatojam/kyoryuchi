@@ -1,0 +1,78 @@
+// 旧居留地の歴史　　ーーーーーーーーーーーーーーーーーー
+.ttl_area{
+  font-size: 4.0rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  @include max-screen($bp-mobile) {
+    font-size: 3rem;
+  }
+  span{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+}
+
+.his_block{
+  margin-bottom: 60px;
+  overflow: hidden;
+  h2{
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin-bottom: 20px;
+    span{
+      font-size: 6rem;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+  h3{
+    font-size: 2.4rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-family: $font-sans;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  img{
+    margin-bottom: 10px;
+  }
+  figcaption{
+    font-family: $font-sans;
+    font-weight: 600;
+    color: $color-dark-red;
+    span{
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+// サイドナビ
+.side_nav{
+  font-family: $font-sans;
+  font-weight: 400;
+  dt{
+    background: $color-dark-brown;
+    padding: 5px 20px;
+    color: $color-white;
+    font-size: 1.8rem;
+  }
+  dd{
+    padding: 10px 20px;
+    border-bottom: 1px solid $color-gray;
+    text-indent: -1em;
+    padding-left: calc(20px + 1em);
+  }
+  @include max-screen($bp-tablet) {
+    display: none;
+  }
+
+}

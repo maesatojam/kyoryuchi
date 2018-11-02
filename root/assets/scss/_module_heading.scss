@@ -1,0 +1,174 @@
+// heading --------------------
+
+// 下層メインイメージ
+.m-title-low {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  height: 27vh;
+  background-position: center center;
+  background-size: cover;
+  color: $color-white;
+  h1{
+    width: 100%;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-weight: normal;
+    padding-left: 20px;
+    span{
+      font-size: 2rem;
+    }
+  }
+  &.ttl_his {
+    background-image: url(../img/his_ttl.jpg);
+  }
+  &.title-about {
+    background-image: url(../img/bg_title_about.png);
+  }
+  &.title-recruit {
+    background-image: url(../img/bg_title_recruit.png);
+  }
+  &.title-solution {
+    background-image: url(../img/bg_title_solution.png);
+  }
+  &.title-member {
+    background-image: url(../img/bg_title_member.png);
+  }
+  &.title-blog {
+    background-image: url(../img/bg_title_blog.png);
+  }
+}
+.m-heading-low {
+  padding: 10px 30px;
+  background-color: $color-op-blue;
+  color: $color-white;
+  letter-spacing: 0.1em;
+  font-size: 3.6rem;
+}
+
+// 下線付き英字見出し
+.m-heading-en {
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: 3.2rem;
+  span {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      margin-left: -40%;
+      width: 80%;
+      height: 3px;
+      border-radius: 2px;
+      background-image: url(../img/border_line.png);
+      background-repeat: repeat-x;
+      content: '';
+    }
+  }
+  em {
+    display: block;
+    letter-spacing: 0.1em;
+    font-size: 1.6rem;
+    font-family: $font-oswald;
+  }
+}
+
+// 下線付き英字見出し中
+.m-heading-en-mid {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.4rem;
+  span {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    &:before,&:after {
+      position: absolute;
+      top: calc(50% - 2px);
+      display: block;
+      width: 50px;
+      height: 3px;
+      border-radius: 2px;
+      background-image: url(../img/border_line.png);
+      background-repeat: repeat-x;
+      content: '';
+    }
+    &:before {
+      left: 0;
+      margin-left: -80px;
+    }
+    &:after {
+      right: 0;
+      margin-right: -80px;
+    }
+  }
+  em {
+    display: block;
+    letter-spacing: 0.1em;
+    font-size: 1.6rem;
+    font-family: $font-oswald;
+  }
+}
+
+// 下線付き見出し
+.m-heading-underline {
+  position: relative;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  font-size: 2.4rem;
+  &:after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-image: url(../img/border_line.png);
+    background-repeat: repeat-x;
+    content: '';
+  }
+}
+
+// 中見出し左寄せ
+.m-heading-mid-left {
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+// 中見出し左寄せ小
+.m-heading-min-left {
+  font-size: 2rem;
+
+  @extend .m-heading-mid-left ;
+}
+
+// 中見出し中央
+.m-heading-mid-center {
+  margin-bottom: 0.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+// 中見出し中央小
+.m-heading-min-center {
+  font-size: 2rem;
+
+  @extend .m-heading-mid-center ;
+}

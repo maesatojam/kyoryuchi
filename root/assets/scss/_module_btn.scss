@@ -1,0 +1,28 @@
+// button --------------------
+.link_btn{
+  border: 3px solid $color-black;
+  padding: 13px 0px;
+  text-align: center;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  &:hover{
+    text-decoration: none;
+    opacity: 0.6;
+    color: $color-black;
+    // border: 3px solid $color-brown;
+  }
+}
+
+
+
+// ページトップへ戻るボタン
+.btn-pagetop{
+  position: fixed;
+  bottom: 125px;
+  right: 0px;
+  @include max-screen($bp-tablet) {
+    visibility: hidden;
+  }
+}

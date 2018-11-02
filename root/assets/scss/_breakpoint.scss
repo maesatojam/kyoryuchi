@@ -1,0 +1,26 @@
+// スマートフォン
+$bp-mobile: 767px;
+
+// タブレット
+$bp-tablet: 1024px;
+
+// XXXpx以下
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+// XXXpx以上
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+// XXXpx以上 XXXpx以下
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
