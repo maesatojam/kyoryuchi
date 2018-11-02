@@ -3977,6 +3977,7 @@ ul.icon-items {
     font-family: 'FontAwesome'; }
 
 .side_tab {
+  display: none;
   position: fixed;
   right: 0;
   top: 30px;

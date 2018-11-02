@@ -449,6 +449,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/root\/assets\/img\/thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3479,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/thumbnail.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/top_map.png": {
 		"fileType": 32768,
 		"ignore": 0,
