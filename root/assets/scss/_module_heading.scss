@@ -22,23 +22,44 @@
       font-size: 2rem;
     }
   }
-  &.ttl_his {
-    background-image: url(../img/his_ttl.jpg);
+  &.ttl_history {
+    background-image: url(../img/history_ttl.jpg);
   }
-  &.title-about {
-    background-image: url(../img/bg_title_about.png);
+  &.ttl_future {
+    background-image: url(../img/future_ttl.jpg);
   }
-  &.title-recruit {
-    background-image: url(../img/bg_title_recruit.png);
+  &.ttl_event {
+    background-image: url(../img/event_ttl.jpg);
   }
-  &.title-solution {
-    background-image: url(../img/bg_title_solution.png);
+  &.ttl_spot , &.ttl_culture , &.ttl_gourmet , &.ttl_shopping ,&.ttl_other {
+    background-image: url(../img/spot_ttl.jpg);
   }
-  &.title-member {
-    background-image: url(../img/bg_title_member.png);
+  &.ttl_map {
+    background-image: url(../img/map_ttl.jpg);
   }
-  &.title-blog {
-    background-image: url(../img/bg_title_blog.png);
+  &.ttl_access {
+    background-image: url(../img/access_ttl.jpg);
+  }
+  &.ttl_kyoryuchi-club {
+    background-image: url(../img/kyoryuchi-club_ttl.jpg);
+  }
+  &.ttl_about {
+    background-image: url(../img/about_ttl.jpg);
+  }
+  &.ttl_banner {
+    background-image: url(../img/banner_ttl.jpg);
+  }
+  &.ttl_link {
+    background-image: url(../img/link_ttl.jpg);
+  }
+  &.ttl_contact {
+    background-image: url(../img/contact_ttl.jpg);
+  }
+  &.ttl_privacy {
+    background-image: url(../img/privacy_ttl.jpg);
+  }
+  &.ttl_sitemap {
+    background-image: url(../img/sitemap_ttl.jpg);
   }
 }
 .m-heading-low {

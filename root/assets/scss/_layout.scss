@@ -34,6 +34,26 @@
     content: '';
   }
 }
+.m-container {
+  margin: 0 auto;
+  max-width: 1140px;
+  @include max-screen($bp-tablet) {
+    padding: 0 20px;
+  }
+  @include max-screen($bp-mobile) {
+    padding: 0 20px;
+  }
+  & > * {
+    &:last-child {
+      // margin-bottom: 0;
+    }
+  }
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
 
 // 2カラム
 .l-container-left {

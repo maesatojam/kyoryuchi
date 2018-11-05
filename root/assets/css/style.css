@@ -2685,6 +2685,20 @@ img {
     clear: both;
     content: ''; }
 
+.m-container {
+  margin: 0 auto;
+  max-width: 1140px; }
+  @media screen and (max-width: 1024px) {
+    .m-container {
+      padding: 0 20px; } }
+  @media screen and (max-width: 767px) {
+    .m-container {
+      padding: 0 20px; } }
+  .m-container:after {
+    display: block;
+    clear: both;
+    content: ''; }
+
 .l-container-left {
   float: left;
   width: 70%; }
@@ -3114,18 +3128,32 @@ img {
     padding-left: 20px; }
     .m-title-low h1 span {
       font-size: 2rem; }
-  .m-title-low.ttl_his {
-    background-image: url(../img/his_ttl.jpg); }
-  .m-title-low.title-about {
-    background-image: url(../img/bg_title_about.png); }
-  .m-title-low.title-recruit {
-    background-image: url(../img/bg_title_recruit.png); }
-  .m-title-low.title-solution {
-    background-image: url(../img/bg_title_solution.png); }
-  .m-title-low.title-member {
-    background-image: url(../img/bg_title_member.png); }
-  .m-title-low.title-blog {
-    background-image: url(../img/bg_title_blog.png); }
+  .m-title-low.ttl_history {
+    background-image: url(../img/history_ttl.jpg); }
+  .m-title-low.ttl_future {
+    background-image: url(../img/future_ttl.jpg); }
+  .m-title-low.ttl_event {
+    background-image: url(../img/event_ttl.jpg); }
+  .m-title-low.ttl_spot, .m-title-low.ttl_culture, .m-title-low.ttl_gourmet, .m-title-low.ttl_shopping, .m-title-low.ttl_other {
+    background-image: url(../img/spot_ttl.jpg); }
+  .m-title-low.ttl_map {
+    background-image: url(../img/map_ttl.jpg); }
+  .m-title-low.ttl_access {
+    background-image: url(../img/access_ttl.jpg); }
+  .m-title-low.ttl_kyoryuchi-club {
+    background-image: url(../img/kyoryuchi-club_ttl.jpg); }
+  .m-title-low.ttl_about {
+    background-image: url(../img/about_ttl.jpg); }
+  .m-title-low.ttl_banner {
+    background-image: url(../img/banner_ttl.jpg); }
+  .m-title-low.ttl_link {
+    background-image: url(../img/link_ttl.jpg); }
+  .m-title-low.ttl_contact {
+    background-image: url(../img/contact_ttl.jpg); }
+  .m-title-low.ttl_privacy {
+    background-image: url(../img/privacy_ttl.jpg); }
+  .m-title-low.ttl_sitemap {
+    background-image: url(../img/sitemap_ttl.jpg); }
 
 .m-heading-low {
   padding: 10px 30px;

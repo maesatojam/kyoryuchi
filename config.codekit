@@ -97,6 +97,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/root\/assets\/img\/event_ttl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40457,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/event_ttl.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/event_ttl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/feature01.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -185,13 +196,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/root\/assets\/img\/his_ttl.jpg": {
+	"\/root\/assets\/img\/history_ttl.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 56862,
-		"inputAbbreviatedPath": "\/root\/assets\/img\/his_ttl.jpg",
-		"outputAbbreviatedPath": "\/root\/assets\/img\/his_ttl.jpg",
+		"inputAbbreviatedPath": "\/root\/assets\/img\/history_ttl.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/history_ttl.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -251,6 +262,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/root\/assets\/img\/icon_pdf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 633,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/icon_pdf.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/icon_pdf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/icon_search.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -269,6 +291,39 @@
 		"initialSize": 239857,
 		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage01.jpg",
 		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/map_img01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76518,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/map_img01.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/map_img01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/map_img02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 181081,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/map_img02.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/map_img02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/map_ttl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40338,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/map_ttl.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/map_ttl.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -401,6 +456,17 @@
 		"initialSize": 1857,
 		"inputAbbreviatedPath": "\/root\/assets\/img\/spot04.png",
 		"outputAbbreviatedPath": "\/root\/assets\/img\/spot04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/spot_ttl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57848,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/spot_ttl.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/spot_ttl.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -828,6 +894,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/root\/assets\/scss\/_module_table.scss",
 		"outputAbbreviatedPath": "\/root\/assets\/css\/_module_table.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/root\/assets\/scss\/_page_event.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/root\/assets\/scss\/_page_event.scss",
+		"outputAbbreviatedPath": "\/root\/assets\/css\/_page_event.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
