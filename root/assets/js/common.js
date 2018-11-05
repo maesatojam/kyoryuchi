@@ -75,7 +75,7 @@ $(document).on('ready', function() {
     var topBtn = $('.btn-pagetop');
     topBtn.hide();
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 800) {
+      if ($(this).scrollTop() > 200) {
         topBtn.fadeIn();
       } else {
         topBtn.fadeOut();
@@ -86,7 +86,7 @@ $(document).on('ready', function() {
     var sideTab = $('.side_tab');
     sideTab.hide();
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 800) {
+      if ($(this).scrollTop() > 200) {
         sideTab.fadeIn();
       } else {
         sideTab.fadeOut();
