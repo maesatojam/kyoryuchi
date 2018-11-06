@@ -5,6 +5,9 @@ $color-black: #333;
 // 文字色グレー
 $color-gray: #999;
 
+// 透過黒
+$color-op-black: rgba(0,0,0,0.5);
+
 // 茶色
 $color-brown: #a78b5a;
 // こげ茶色
@@ -37,7 +40,7 @@ $color-op-white: rgba(255,255,255,0.9);
 // ブルー
 $color-blue: #5D9FEF;
 // ライトブルー
-$color-light-blue: #D4E7FF;
+$color-light-blue: #69a8b4;
 // ダークブルー
 $color-dark-blue: #427DC7;
 // 透過ブルー

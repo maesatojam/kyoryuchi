@@ -70,6 +70,9 @@ $font-base:'Noto Serif JP' , serif;
 // ゴシック体
 $font-sans:'Noto Sans Japanese' ,sans-serif;
 
+.font-sans{
+  font-family: $font-sans;
+}
 
 // Oswald
 $font-oswald:'Oswald', sans-serif;
