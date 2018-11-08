@@ -10,13 +10,11 @@
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
-    margin-bottom: 80px;
+    margin-bottom: 6rem;
+    letter-spacing: 3px;
     span{
       font-size: 1.8rem;
     }
-}
-
-.museum{
 }
 
 .future_box{
@@ -65,38 +63,39 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
-}
-a{
-  .img_overlay{
-    position: absolute;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 250px;
-    background: $color-op-black;
-    color: $color-white;
-    font-weight: bold;
-    font-size: 2rem;
-    opacity: 0;
-    transition: 0.3s;
-    .fa{
-      margin-right: 5px;
-    }
-  }
-  &:hover{
+  a{
     .img_overlay{
-      opacity: 1;
+      position: absolute;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background: $color-op-black;
+      color: $color-white;
+      font-weight: bold;
+      font-size: 2rem;
+      opacity: 0;
+      transition: 0.3s;
+      .fa{
+        margin-right: 5px;
+      }
     }
-    img{
-      opacity: 1;
+    &:hover{
+      .img_overlay{
+        opacity: 1;
+      }
+      img{
+        opacity: 1;
+      }
     }
   }
 }
+
 .future_detail{
   font-family: $font-sans;
   font-size: 1.4rem;

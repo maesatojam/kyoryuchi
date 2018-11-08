@@ -1,0 +1,185 @@
+// みどころ　ーーーーーーーーーーーーーーーーーー
+#map_custmomize {
+	width: 100%;
+	height: 53.2rem;
+	background-color: $color-light-gray2;
+	margin-bottom: 4rem;
+}
+.ttl_area_min.spot {
+	margin-bottom: 3rem;
+	margin-top: -2rem;
+	img{
+		margin-bottom: 1rem;
+		-webkit-filter: grayscale(100%) brightness(0.4);
+		-moz-filter: grayscale(100%) brightness(0.4);
+		-o-filter: grayscale(100%) brightness(0.4);
+		-ms-filter: grayscale(100%) brightness(0.4);
+		filter: grayscale(100%) brightness(0.4);
+	}
+}
+.cat_name{
+	font-size: 2.2rem;
+	margin-bottom: 4rem;
+}
+.cat{
+	margin-bottom: 3rem;
+	li {
+	 margin: 1rem;
+	 font-family: $font-sans;
+	 a{
+		 display: inline-block;
+		 color: $color-black;
+		 padding:1rem 3rem;
+		 background-color: $color-light-gray2;
+		 border-radius: 3rem;
+		 transition: 0.3s;
+		 @include max-screen($bp-mobile) {
+			 padding:0.5rem 1.5rem;
+ 	  }
+		 &:hover{
+			 background-color: $color-black;
+			 color: $color-white;
+		 }
+	 }
+	}
+}
+#cat {
+ font-size: 1.5em;
+}
+.spot_list{
+	ul{
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -3rem;
+		@include max-screen($bp-tablet) {
+			margin: 0 -1rem;
+		}
+		@include max-screen($bp-mobile) {
+			margin: 0;
+		}
+	}
+	li{
+		width: 30%;
+		border: 3px solid #333;
+		margin: 0 0 2rem 3rem;
+		transition: 0.3s;
+		@include max-screen($bp-tablet) {
+			width: 45%;
+			margin: 0 0 1.5rem 1rem;
+	  }
+		@include max-screen($bp-mobile) {
+			width: 100%;
+			margin: 0 0 1rem;
+	  }
+		&:hover{
+			background: $color-black;
+			a{
+				color: $color-white;
+			}
+		}
+		a{
+			padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+			display: block;
+			position: relative;
+			transition: 0.3s;
+			@include max-screen($bp-mobile) {
+				padding: 0.8rem 2.5rem 0.8rem 0.8rem;
+			}
+			&:after{
+				content: "";
+				display: inline-block;
+				position: absolute;
+				top: 32%;
+				right: 1.5rem;
+				width: 1.3rem;
+				height: 2rem;
+				background: url(../img/icon_shop_pin_r.png) 0 0 no-repeat;
+				background-size: 1.3rem auto;
+				transition: 0.3s;
+				@include max-screen($bp-mobile) {
+					right: 0.8rem;
+				}
+			}
+			&:hover{
+				// background: $color-black;
+				// color: $color-white;
+				&::after{
+					background: url(../img/icon_shop_pin_w.png) 0 0 no-repeat;
+					background-size: 1.3rem auto;
+				}
+			}
+		}
+	}
+}
+
+
+
+// 見どころリンク
+.spot_link{
+  width: 100%;
+  margin: auto;
+  padding: 0 2vw;
+  @include max-screen($bp-mobile) {
+    padding: 0;
+  }
+  li{
+    margin: 0 1vw;
+    background: $color-white;
+    border: 3px solid $color-white;
+    transition: 0.3s;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    @include max-screen($bp-tablet) {
+      width: 160px;
+      height: 160px;
+      margin: 0;
+    }
+    @include max-screen($bp-mobile) {
+      width: 31vw;
+      height: 31vw;
+      margin: 0 1vw 10px ;
+      min-width: 130px;
+      min-height: 130px;
+    }
+    a{
+      display: block;
+      padding: 40px 0;
+      @include max-screen($bp-tablet) {
+        padding: 30px 0;
+      }
+      @include max-screen($bp-mobile) {
+        padding: 20px 0;
+      }
+    }
+    img{
+      -webkit-filter: grayscale(100%) brightness(0.4);
+      -moz-filter: grayscale(100%) brightness(0.4);
+      -o-filter: grayscale(100%) brightness(0.4);
+      -ms-filter: grayscale(100%) brightness(0.4);
+      filter: grayscale(100%) brightness(0.4);
+      transition: 0.3s;
+      margin-bottom: 10px;
+      @include max-screen($bp-tablet) {
+        width: 100px;
+      }
+      @include max-screen($bp-mobile) {
+        width: 80px;
+      }
+    }
+    &:hover{
+      border: 3px solid $color-brown;
+
+      img{
+        -webkit-filter: grayscale(0%) brightness(1);
+        -moz-filter: grayscale(0%) brightness(1);
+        -o-filter: grayscale(0%) brightness(1);
+        -ms-filter: grayscale(0%) brightness(1);
+        filter: grayscale(0%) brightness(1);
+				opacity: 1;
+      }
+    }
+  }
+}

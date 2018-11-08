@@ -31,6 +31,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/root\/assets\/img\/access_ttl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63014,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/access_ttl.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/access_ttl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/area_map.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -405,6 +416,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/root\/assets\/img\/icon_shop_pin_r.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 525,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/icon_shop_pin_r.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/icon_shop_pin_r.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/icon_shop_pin_w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 553,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/icon_shop_pin_w.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/icon_shop_pin_w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/mainimage01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -445,6 +478,17 @@
 		"initialSize": 40338,
 		"inputAbbreviatedPath": "\/root\/assets\/img\/map_ttl.jpg",
 		"outputAbbreviatedPath": "\/root\/assets\/img\/map_ttl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mapya.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1074,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mapya.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mapya.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -735,6 +779,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/root\/assets\/js\/gmap.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/root\/assets\/js\/gmap.js",
+		"outputAbbreviatedPath": "\/root\/assets\/js\/min\/gmap-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/root\/assets\/js\/img\/mapya.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1074,
+		"inputAbbreviatedPath": "\/root\/assets\/js\/img\/mapya.png",
+		"outputAbbreviatedPath": "\/root\/assets\/js\/img\/mapya.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/js\/instafeed.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -745,6 +811,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/root\/assets\/js\/json\/shop.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/root\/assets\/js\/json\/shop.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/root\/assets\/js\/json\/shop-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/root\/assets\/js\/min\/common-min.js": {
 		"fileType": 64,
@@ -977,6 +1054,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/root\/assets\/scss\/_module_form.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/root\/assets\/scss\/_module_form.scss",
+		"outputAbbreviatedPath": "\/root\/assets\/css\/_module_form.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/root\/assets\/scss\/_module_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1162,6 +1255,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/root\/assets\/scss\/_page_his.scss",
 		"outputAbbreviatedPath": "\/root\/assets\/css\/_page_his.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/root\/assets\/scss\/_page_map.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/root\/assets\/scss\/_page_map.scss",
+		"outputAbbreviatedPath": "\/root\/assets\/css\/_page_map.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/root\/assets\/scss\/_page_spot.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/root\/assets\/scss\/_page_spot.scss",
+		"outputAbbreviatedPath": "\/root\/assets\/css\/_page_spot.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

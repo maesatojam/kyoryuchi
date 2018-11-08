@@ -327,7 +327,7 @@ display: none;
     position: relative;
     display: inline-block;
     text-decoration: none;
-    padding: 13px 20px 14px;
+    padding: 13px 10px 14px;
     @include max-screen($bp-tablet) {
       padding: 0;
     }

@@ -1,0 +1,129 @@
+
+/*==================================
+お問い合わせ
+==================================*/
+// form --------------------
+
+.form-attention {
+  em {
+    color: $color-red;
+  }
+}
+.required {
+  color: $color-red;
+  font-weight: normal;
+}
+
+.m-form-block {
+  margin-bottom: 2em;
+  padding: 40px;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+
+  @include max-screen($bp-mobile){
+    padding: 20px;
+  }
+  table {
+    margin-bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+  th,td {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+
+    @include max-screen($bp-mobile){
+      display: block;
+    }
+  }
+  th {
+    width: 35%;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+
+    @include max-screen($bp-mobile){
+      padding-bottom: 0;
+      width: 100%;
+      border-bottom: 0;
+    }
+  }
+  input[type="text"],input[type="email"],textarea {
+    padding: 0.8em 0.5em;
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+
+    -webkit-appearance : none;
+    &:focus {
+      border: solid 1px $color-blue;
+    }
+    &.input-date {
+      padding: 0.3em 0.5em;
+      width: 12em;
+    }
+  }
+  select {
+    border: solid 1px #ccc;
+    background-color: $color-white;
+  }
+}
+.submit {
+    background-color: $color-white;
+    border: 3px solid $color-black;
+    padding: 13px 0px;
+    text-align: center;
+    display: inline-block;
+    width: 22rem;
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: $color-black;
+    &:hover{
+      text-decoration: none;
+      opacity: 0.6;
+      color: $color-black;
+      // border: 3px solid $color-brown;
+    }
+    @include max-screen($bp-mobile){
+      font-size: 1.5rem;
+      width: 15rem;
+    }
+}
+.back_btn {
+    background-color: $color-light-gray2;
+    border: 3px solid $color-light-gray3;
+    padding: 13px 0px;
+    text-align: center;
+    display: inline-block;
+    width: 22rem;
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: $color-black;
+    &:hover{
+      text-decoration: none;
+      opacity: 0.6;
+      color: $color-black;
+      // border: 3px solid $color-brown;
+    }
+    @include max-screen($bp-mobile){
+      font-size: 1.5rem;
+      width: 15rem;
+    }
+}
+
+.contact_block{
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $color-black;
+}
+
+.captcha input{
+  border: 1px solid $color-gray;
+  padding: 6px;
+  width: 15rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
