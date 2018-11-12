@@ -13,7 +13,7 @@ $(document).on('ready', function() {
     nextArrow:'<div class="btn_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',
      responsive: [
        {
-        breakpoint: 768, //767px以下のサイズに適用
+        breakpoint: 900, //767px以下のサイズに適用
         settings: {
           slidesToShow:2
         }
@@ -156,7 +156,6 @@ $(document).on('ready', function() {
            e.preventDefault();
        });
    }
-  /*▲ SNSシェアの設定*/
 
   var windowWidth;
   $(function(){
@@ -165,6 +164,7 @@ $(document).on('ready', function() {
   });
   });
 
+  /*▲ SNSシェアの設定*/
 
 
 });

@@ -52,6 +52,9 @@
   li{
     width: 30%;
     margin-right: 2%;
+    @include max-screen($bp-tablet) {
+      width: 48%;
+    }
   }
   .link_btn{
     width: 100%;
