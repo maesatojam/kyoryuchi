@@ -1,1 +1,7 @@
 // エリアマップ　ーーーーーーーーーーーーーーーーーー
+.map_img{
+  @include max-screen($bp-tablet) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* 追加用css */
+/*==================================
+SITEMAP
+==================================*/
+.sitemap_wrap {
+  max-width: 600px;
+  flex-wrap: nowrap;
+}
+
+.link_left li, .link_right li {
+  line-height: 2.5;
+}
+
+.list_inner li {
+  line-height: 1.5;
+}
+
+/*==================================
+PRIVACY
+==================================*/
+.pp_list {
+  margin-bottom: 4rem;
+}
+
+.pp_list dt {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*==================================
+LINK
+==================================*/
+.link_ttl01 {
+  font-size: 2rem;
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+.link_button {
+  margin-bottom: 8rem;
+}
+
+.link_button li a {
+  display: block;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid #333;
+  border-radius: 3.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.link_content {
+  margin-bottom: 4.0rem;
+}
+
+.link_ttl02 {
+  font-size: 2.5rem;
+  margin-bottom: 3.5rem;
+  /* padding: 0 2.5rem 0.5rem; */
+  line-height: 1;
+  /* border-bottom: 1px solid #333; */
+  /* border-left: 5px solid #333; */
+}
+.link_ttl02::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 2.8rem;
+  background: #333;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.link_ttl02::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #b5b5b5;
+  margin-top: 9px;
+}
+
+.link_list {
+  margin-bottom: 2rem;
+}
+
+.link_list dt {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.link_list dd a {
+  color: #a78b5a;
+  transition: 0.3s;
+}
+.link_list dd a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/*==================================
+BANNER
+==================================*/
+.banner_list {
+  margin-bottom: 4rem;
+}
+
+.banner_list dt {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.banner_img {
+  justify-content: flex-start;
+  margin: 3rem 0;
+}
+
+.banner_img dd {
+  margin-right: 3rem;
+}
+
+.img_big, .img_small {
+  background: #ddd;
+  position: relative;
+}
+
+.img_big {
+  width: 275px;
+  height: 171px;
+}
+
+.img_small {
+  width: 275px;
+  height: 77px;
+}
+
+.absolute {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caution {
+  font-size: 1.4rem;
+}
+
+/*==================================
+kyoryuchi-club
+==================================*/
+.kc_ttl {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 6rem 0 4rem;
+}
+
+.kc_list {
+  margin-bottom: 4rem;
+}
+
+.kc_list dt {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.kc_list_inner {
+  display: list-item;
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+/*==================================
+ABOUT
+==================================*/
+.about_ttl {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.about_list li {
+  line-height: 1.8;
+}
+
+/*==================================
+ACCESS
+==================================*/
+
+.access_ttl {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  padding: 0 2.5rem 0.5rem;
+  border-bottom: 1px solid #333;
+  border-left: 5px solid #333;
+}
+
+.access_box {
+  margin-bottom: 8rem;
+}
+
+.access_flex {
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.pdf_link {
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.pdf_link span {
+  padding-left: 0.5rem;
+  text-decoration: underline;
+}

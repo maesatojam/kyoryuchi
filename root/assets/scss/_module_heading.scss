@@ -27,6 +27,14 @@
     span{
       font-size: 2rem;
     }
+    @include max-screen($bp-mobile) {
+      font-size: 2.6rem;
+      line-height: 1.4;
+      span{
+        font-size: 1.6rem;
+        display: block;
+      }
+    }
   }
   &.ttl_history {
     background-image: url(../img/history_ttl.jpg);
@@ -69,5 +77,11 @@
   }
   &.ttl_404 {
     background-image: url(../img/404_ttl.jpg);
+  }
+  &.ttl_search {
+    background-image: url(../img/search_ttl.jpg);
+  }
+  &.ttl_newpage {
+    background-image: url(../img/newpage_ttl.jpg);
   }
 }

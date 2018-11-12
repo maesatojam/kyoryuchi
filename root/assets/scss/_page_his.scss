@@ -28,6 +28,13 @@
       font-style: italic;
       font-weight: normal;
     }
+    @include max-screen($bp-mobile) {
+      font-size: 2.6rem;
+      line-height: 1.2;
+      span{
+        font-size: 5rem;
+      }
+    }
   }
   h3{
     font-size: 2.4rem;

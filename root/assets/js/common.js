@@ -75,7 +75,7 @@ $(document).on('ready', function() {
     var topBtn = $('.btn-pagetop');
     topBtn.hide();
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > 800) {
         topBtn.fadeIn();
       } else {
         topBtn.fadeOut();
@@ -86,7 +86,7 @@ $(document).on('ready', function() {
     var sideTab = $('.side_tab');
     sideTab.hide();
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > 800) {
         sideTab.fadeIn();
       } else {
         sideTab.fadeOut();
@@ -140,22 +140,31 @@ $(document).on('ready', function() {
    *  @param snsName SNSの名前（Googleアナリティクス上の表示に使われる）
    *  @param shareUrl シェア対象のURL（Googleアナリティクス上の表示に使われる）
    */
-  function setShareEvent(selector, snsName, shareUrl) {
-      $(selector).on('click', function(e){
-          var current = this;
-          //　*** Googleアナリティクスにイベント送らないなら、以下のコードは不要 ***
-          // 'share'の文字列は任意に変えてもよい（Googleアナリティクス上の表示文字列として使われる）
-          // 'nonInteraction' : 1にしないと、直帰率がおかしくなる（イベント発行したユーザーは直帰扱いでなくなる）ので注意
-          ga('send', 'social', snsName, 'share', shareUrl, {
-              'nonInteraction': 1
-          });
-          // *** Googleアナリティクス送信ここまで ****
+   function setShareEvent(selector, snsName, shareUrl) {
+       $(selector).on('click', function(e){
+           var current = this;
+           //　*** Googleアナリティクスにイベント送らないなら、以下のコードは不要 ***
+           // 'share'の文字列は任意に変えてもよい（Googleアナリティクス上の表示文字列として使われる）
+           // 'nonInteraction' : 1にしないと、直帰率がおかしくなる（イベント発行したユーザーは直帰扱いでなくなる）ので注意
+           // ga('send', 'social', snsName, 'share', shareUrl, {
+           //     'nonInteraction': 1
+           // });
+           // *** Googleアナリティクス送信ここまで ****
 
-          // このあたりは適当に書き換えて下さい
-          window.open(current.href, '_blank', 'width=600, height=600, menubar=no, toolbar=no, scrollbars=yes');
-          e.preventDefault();
-      });
-  }
+           // このあたりは適当に書き換えて下さい
+           window.open(current.href, '_blank', 'width=600, height=600, menubar=no, toolbar=no, scrollbars=yes');
+           e.preventDefault();
+       });
+   }
   /*▲ SNSシェアの設定*/
+
+  var windowWidth;
+  $(function(){
+  $(window).on('load scroll resize',function(){
+    windowWidth = window.innerWidth;
+  });
+  });
+
+
 
 });

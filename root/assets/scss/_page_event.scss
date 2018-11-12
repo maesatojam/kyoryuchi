@@ -3,6 +3,13 @@
   .slide_box{
     width: 29%;
     margin: 0 20px 40px;
+    a img{
+      transition: 0.5s;
+    }
+    a:hover img{
+      transform: scale(1.05);
+      transition-property: transform;
+    }
     @include max-screen($bp-tablet) {
       width: 40%;
       max-width: 370px;
@@ -11,6 +18,13 @@
       width: 90%;
       max-width: 370px;
     }
+  }
+}
+.events_flex{
+  &::after{
+    content:"";
+    display: block;
+    width:45%;
   }
 }
 
