@@ -15,14 +15,14 @@
 }
 .top-map{
   @include max-screen($bp-mobile) {
-    margin-top: -40px;
+    // margin-top: -40px;
   }
 }
 
 .top_map_img{
-  margin-top: -80px;
+  // margin-top: -80px;
   @include max-screen($bp-mobile) {
-    margin-top: -40px;
+    // margin-top: -40px;
   }
 }
 

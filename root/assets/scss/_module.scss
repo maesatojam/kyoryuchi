@@ -128,7 +128,7 @@
   text-align: center;
 }
 .sp-tac{
-  @include max-screen($bp-tablet) {
+  @include max-screen($bp-mobile) {
     text-align: center;
   }
 }

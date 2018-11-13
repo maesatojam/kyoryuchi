@@ -17,6 +17,13 @@
     display: block;
     margin-bottom: 0.8rem;
   }
+  a{
+    color: $color-white;
+    &:hover{
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
   @include max-screen($bp-mobile) {
     width: 100%;
     margin-bottom: 10px;

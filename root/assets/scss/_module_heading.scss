@@ -11,6 +11,7 @@
   background-position: center center;
   background-size: cover;
   color: $color-white;
+  background-image: url(../img/newpage_ttl.jpg);
   @include max-screen($bp-tablet) {
     height: 22vh;
   }
