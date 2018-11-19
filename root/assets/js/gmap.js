@@ -13,9 +13,9 @@ var viewGoogleMap = function(id, option, isNumberPin){
   var markerArray = new Array();
   var ClearMarkerArray = new google.maps.MVCArray();
 
-  
+
   //resizeWindow();
-  
+
   var setMarkerClickListener = function(marker, markerData) {
   	 google.maps.event.addListener(marker, 'mouseover', function(event) {
       if (openInfoWindow) {
@@ -30,33 +30,33 @@ var viewGoogleMap = function(id, option, isNumberPin){
         openInfoWindow = null;
       })
       openInfoWindow.open(marker.getMap(), marker);
-      
+
     });
-  
+
   };
-  
+
   //リンクとマーカーを連動
   var setLinkClickEvent = function(lnk, marker){
     lnk.bind('click', function(){
       google.maps.event.trigger(marker, 'mouseover');
     });
   }
-  
+
   //マーカー生成
   var setMarkerData = function(markerData) {
-  	
+
   	var lnk = null;
   	$('#spot_list > ul').empty();
-  	 
-    for (var i = 0; i < markerData.length; i++) {      
-       
-	      var icon = new google.maps.MarkerImage('img/mapya.png',
+
+    for (var i = 0; i < markerData.length; i++) {
+
+      var icon = new google.maps.MarkerImage('/wp/wp-content/themes/kyoryuchi/assets/js/img/mapya.png',
        new google.maps.Size(64,64),
        new google.maps.Point(0,0),
        new google.maps.Point(16,32),
        new google.maps.Size(32,32)
        );
-      
+
       var marker = new google.maps.Marker({
         position: markerData[i].position,
         title: markerData[i].title,
@@ -64,32 +64,32 @@ var viewGoogleMap = function(id, option, isNumberPin){
         icon: icon,
         id: markerData[i].id
       });
-      
+
       // マーカークリックイベント作成
       setMarkerClickListener(marker, markerData[i], true);
       markerArray.push(marker);
-      
-      
+
+
       lnk = $('<li>').attr("id", markerData[i].id);
       lnk = $('<li>').append($('<a href="javascript:void(0)"/>').text(markerData[i].title));
       $('#spot_list > ul').append(lnk);
       setLinkClickEvent(lnk, marker);
-           
+
     }
   };
-    
+
 
   var refreshMarker = function(){
-    
+
     $('#spot_list > ul > li').remove();
-    
+
     var json_file;
     //if($('#cat').val() != ""){
-      json_file = "./json/shop.json";
+    json_file = "/wp/wp-content/themes/kyoryuchi/assets/js/json/shop.json";
     //}else{
       //json_file = "./json/none.json";
     //}
-    
+
     $.ajax({
       url: json_file,
       type: 'get',
@@ -101,43 +101,44 @@ var viewGoogleMap = function(id, option, isNumberPin){
         console.log('Miss..');
       },
       success: function(pdata){
-        
+
         //console.log(pdata[0]);
         var markerData = new Array();
         for(var iLoop = 0; iLoop < pdata.length; iLoop++)
         {
-        
-         if(pdata[iLoop].cat == location.hash.replace("#", "")){
-         
+
+          cat_ary = pdata[iLoop].cat.split(",");
+          if($.inArray(location.hash.replace("#", ""), cat_ary) >= 0){
+
          //var content =  "<a href='https://www.google.com/maps/search/?api=1&query=Google&query_place_id=" + pdata[iLoop].place_id + "' target='_blank'>" + pdata[iLoop].name + "</a>";
          var content =  "<a href='" + pdata[iLoop].url + "' target='_blank'>" + pdata[iLoop].name + "</a>";
 
           markerData.push({
-            position: new google.maps.LatLng(pdata[iLoop].lat, pdata[iLoop].lng), 
+            position: new google.maps.LatLng(pdata[iLoop].lat, pdata[iLoop].lng),
             title: pdata[iLoop].name,
             cat: pdata[iLoop].cat,
             content: content,
             id:pdata[iLoop].place_id
           });
         }
-      
-        
+
+
         if(markerData.length > 0){
           setMarkerData(markerData);
         }
-        
+
         }
-        
+
       }
     });
-       
+
   }
-  
+
   option = option ? option : {};
   if(id == null){
     return;
   }
-  
+
   var mapOption = {
     zoom: option.zoom || 17,
     center:option.center || new google.maps.LatLng(34.688417,135.193494),
@@ -150,40 +151,40 @@ var viewGoogleMap = function(id, option, isNumberPin){
       style: google.maps.NavigationControlStyle.DEFAULT
     }
   };
-  
+
   gmap = new google.maps.Map(document.getElementById(id), mapOption);
-  
-  
+
+
   var styles = [{
   "stylers":[
-  { "saturation":'-60' }, 
-  { "hue":'#cc9966' } 
+  { "saturation":'-60' },
+  { "hue":'#cc9966' }
   ]
-  
+
   },
   {
-  featureType:'poi.park', 
-  elementType:'geometry.fill', 
-  stylers:[{color:'#cbdfad' }] 
+  featureType:'poi.park',
+  elementType:'geometry.fill',
+  stylers:[{color:'#cbdfad' }]
   },
   {
-  featureType:'poi.business', 
-  stylers:[{visibility: 'off' }] 
+  featureType:'poi.business',
+  stylers:[{visibility: 'off' }]
   }
   ];
 
   gmap.setOptions({styles: styles});
-    
-  
+
+
   google.maps.event.addListener(gmap, 'idle', function(){
     refreshMarker();
     //カテゴリ名表示
     $("#cat_name").html($("a[href = " + location.hash + "]").text());
     //resizeWindow();
   });
-  
-  
-  
+
+
+
 }
 
 
@@ -205,12 +206,12 @@ var viewGoogleMap = function(id, option, isNumberPin){
 //============================================
 
 function setZoomLimit(map, mapTypeId){
-  
+
   var mapTypeRegistry = map.mapTypes;
-  
-  
+
+
   var mapType = mapTypeRegistry.get(mapTypeId);
-  
+
   mapType.maxZoom = 17;
   mapType.minZoom = 11;
 }
@@ -223,7 +224,7 @@ function resizeWindow(){
 	var mapdiv = document.getElementById("map_custmomize");
 	// mapdiv.style.width = "100%";
 	// mapdiv.style.height = "590px";
-	
+
 }
 
 

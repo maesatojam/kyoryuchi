@@ -2366,7 +2366,8 @@
   font-family: 'Noto Sans Japanese';
   src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff) format("woff"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf) format("opentype"); }
 .font-sans {
-  font-family: "Noto Sans Japanese", sans-serif; }
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-weight: 400; }
 
 * {
   box-sizing: border-box;
@@ -2817,6 +2818,9 @@ img {
 .bg-light-gray {
   background: #f2f2f2; }
 
+.bg-white-gray {
+  background: #fafafa; }
+
 .bg-his {
   background: #fff url(../img/bg_top_his01.png) 0 0 no-repeat;
   background-size: cover; }
@@ -3086,10 +3090,14 @@ img {
 
 @media screen and (max-width: 767px) {
   .sp-tac {
-    text-align: center; } }
+    text-align: center !important; } }
 
 .tal {
   text-align: left; }
+
+@media screen and (max-width: 767px) {
+  .sp-tal {
+    text-align: left !important; } }
 
 .tar {
   text-align: right; }
@@ -3884,8 +3892,24 @@ img {
     .foot_link li a {
       color: #fff; }
 
-.instafeed_wrap img {
-  width: 20%; }
+.instafeed_wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap; }
+
+.insta_box {
+  width: 20%;
+  height: 20vw;
+  overflow: hidden;
+  text-align: center; }
+  .insta_box img {
+    max-width: initial;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    font-family: "object-fit: cover; object-position: 50% 50%;"; }
 
 .side_tab {
   display: none;
@@ -4328,7 +4352,8 @@ img {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 100px;
-  font-family: "Noto Sans Japanese", sans-serif; }
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-weight: 400; }
 
 .ttl_area_min {
   font-size: 3.0rem;

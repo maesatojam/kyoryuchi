@@ -53,6 +53,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/root\/assets\/img\/banar_kyougikai.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11046,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/banar_kyougikai.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/banar_kyougikai.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/banner01.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -434,6 +445,17 @@
 		"initialSize": 553,
 		"inputAbbreviatedPath": "\/root\/assets\/img\/icon_shop_pin_w.png",
 		"outputAbbreviatedPath": "\/root\/assets\/img\/icon_shop_pin_w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/kyoryuchi-club_img01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4990,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/kyoryuchi-club_img01.png",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/kyoryuchi-club_img01.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -823,12 +845,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/root\/assets\/js\/min\/instafeed-min.js": {
+	"\/root\/assets\/js\/min\/gmap-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/root\/assets\/js\/min\/instafeed-min.js",
-		"outputAbbreviatedPath": "\/root\/assets\/js\/min\/min\/instafeed-min-min.js",
+		"inputAbbreviatedPath": "\/root\/assets\/js\/min\/gmap-min.js",
+		"outputAbbreviatedPath": "\/root\/assets\/js\/min\/min\/gmap-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

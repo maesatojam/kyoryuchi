@@ -129,12 +129,17 @@
 }
 .sp-tac{
   @include max-screen($bp-mobile) {
-    text-align: center;
+    text-align: center!important;
   }
 }
 
 .tal {
   text-align: left;
+}
+.sp-tal{
+  @include max-screen($bp-mobile) {
+    text-align: left!important;
+  }
 }
 
 .tar {
