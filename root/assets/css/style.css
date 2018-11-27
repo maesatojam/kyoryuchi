@@ -3042,6 +3042,9 @@ img {
 .pr60 {
   padding-right: 6rem !important; }
 
+.p0 {
+  padding: 0rem !important; }
+
 .fz12 {
   font-size: 1.2rem; }
 
@@ -4155,6 +4158,14 @@ img {
     .top_bnr li {
       width: 50%; } }
 
+.top_bnr_big li {
+  padding: 10px;
+  width: 50%; }
+  @media screen and (max-width: 767px) {
+    .top_bnr_big li {
+      padding: 10px 0;
+      width: 100%; } }
+
 .top_instagram h2 {
   line-height: 1; }
   .top_instagram h2 img {
@@ -4297,7 +4308,7 @@ img {
 .events_flex::after {
   content: "";
   display: block;
-  width: 45%; }
+  width: 30%; }
 
 .category_nav {
   margin-bottom: 50px; }
