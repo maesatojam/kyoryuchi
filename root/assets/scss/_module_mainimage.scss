@@ -1,9 +1,20 @@
 // メインイメージ　ーーーーーーーーーーーーーーーーーー
-.mainimage{
-  max-height: 570px;
+.mainimage-slide{
+  // max-height: 570px;
   text-align: center;
   overflow: hidden;
-  img{
-    width: 100%;
+  .slick-slide{
+    img{
+      height: auto;
+      width: 100%;
+    }
   }
 }
+
+
+.mainimage {
+  max-height: 570px;
+  text-align: center;
+  overflow: hidden; }
+  .mainimage img {
+    width: 100%; }

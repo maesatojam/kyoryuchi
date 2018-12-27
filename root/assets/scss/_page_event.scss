@@ -26,12 +26,18 @@
     display: block;
     width:30%;
   }
+  @include max-screen($bp-mobile) {
+    justify-content: center;
+  }
 }
 
 .category_nav{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include max-screen($bp-mobile) {
+    justify-content: flex-start;
+  }
   li{
-    margin: 0 5px;
+    margin: 0 5px 10px;
     a{
       display: block;
       padding: 10px 20px;
@@ -41,7 +47,7 @@
       text-align: center;
       border-radius: 40px;
       @include max-screen($bp-tablet) {
-        width: 7em;
+        width: 6em;
         padding: 7px 10px;
       }
     &:hover{

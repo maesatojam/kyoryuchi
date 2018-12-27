@@ -260,6 +260,16 @@
     }
   }
 }
+.bnr-flex{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  @include max-screen($bp-mobile) {
+    justify-content: space-between;
+  }
+}
 .top_bnr_big{
   li{
     padding: 10px;

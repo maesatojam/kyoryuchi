@@ -460,6 +460,83 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/root\/assets\/img\/mainimage-d01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160795,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d01.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mainimage-d02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184661,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d02.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mainimage-d03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162730,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d03.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mainimage-d04.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 244420,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d04.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-d04.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mainimage-n01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 227778,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-n01.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-n01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mainimage-n02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 259786,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-n02.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-n02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/root\/assets\/img\/mainimage-n03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 250836,
+		"inputAbbreviatedPath": "\/root\/assets\/img\/mainimage-n03.jpg",
+		"outputAbbreviatedPath": "\/root\/assets\/img\/mainimage-n03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/root\/assets\/img\/mainimage01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

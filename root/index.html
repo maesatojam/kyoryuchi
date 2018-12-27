@@ -144,7 +144,7 @@
           <div class="map_link">
             <a href="">
               <img src="/assets/img/area_map.png" alt="" width="36">
-              <span>　エリアマップ</span>
+              <span>エリアマップ</span>
             </a>
           </div>
           <div class="share">
@@ -161,9 +161,16 @@
 
 <!-- メインイメージ -->
 <section class="">
-  <div class="mainimage">
-    <img src="/assets/img/mainimage01.jpg" alt="">
-  </div>
+  <script type="text/javascript">
+  <!--
+  myTime=(new Date()).getHours();
+  if(myTime>=7 && myTime<17){
+  document.write("<div class='mainimage-slide'><div><img src='/assets/img/mainimage-d01.jpg' alt=''></div><div><img src='/assets/img/mainimage-d02.jpg' alt=''></div><div><img src='/assets/img/mainimage-d03.jpg' alt=''></div><div><img src='/assets/img/mainimage-d04.jpg' alt=''></div></div>");
+  }else if(myTime<7 || myTime>=17){
+  document.write("<div class='mainimage-slide'><div><img src='/assets/img/mainimage-n01.jpg' alt=''></div><div><img src='/assets/img/mainimage-n02.jpg' alt=''></div><div><img src='/assets/img/mainimage-n03.jpg' alt=''></div></div>");
+  }
+  //-->
+  </script>
 </section>
 
 
@@ -423,7 +430,6 @@
 
 <!-- 以下js -->
 <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/assets/js/instafeed.js"></script>
 <script src="/assets/js/slick.min.js"></script>
 <script src="/assets/js/common.js"></script>
 

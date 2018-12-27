@@ -28,6 +28,18 @@ $(document).on('ready', function() {
   });
 });
 
+$(document).ready(function(){
+  $(".mainimage-slide").slick({
+    infinite: true,
+    autoplay: true,
+    adaptiveHeight:true,
+    autoplaySpeed:4000,
+    lazyLoad:'progressive',
+    fade:true,
+    arrows:false
+  });
+ });
+
 
 
   if (window.innerWidth >= 768) {

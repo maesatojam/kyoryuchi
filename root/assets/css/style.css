@@ -2440,6 +2440,24 @@ body {
   -webkit-text-size-adjust: 100%;
   transition: 0.3s; }
 
+body {
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  animation: fadeIn 2s ease 0s 1 normal; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 a {
   color: #333;
   text-decoration: none; }
@@ -3130,6 +3148,9 @@ img {
 
 .underline {
   text-decoration: underline; }
+
+.bold {
+  font-weight: bold; }
 
 .link_btn {
   border: 3px solid #333;
@@ -3964,12 +3985,20 @@ img {
     font-size: 1.2rem;
     font-weight: bold; }
 
+.mainimage-slide {
+  text-align: center;
+  overflow: hidden; }
+  .mainimage-slide .slick-slide img {
+    height: auto;
+    width: 100%; }
+
 .mainimage {
   max-height: 570px;
   text-align: center;
   overflow: hidden; }
-  .mainimage img {
-    width: 100%; }
+
+.mainimage img {
+  width: 100%; }
 
 .ttl_area {
   font-size: 4.0rem;
@@ -4158,6 +4187,16 @@ img {
     .top_bnr li {
       width: 50%; } }
 
+.bnr-flex {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    .bnr-flex {
+      justify-content: space-between; } }
+
 .top_bnr_big li {
   padding: 10px;
   width: 50%; }
@@ -4309,11 +4348,17 @@ img {
   content: "";
   display: block;
   width: 30%; }
+@media screen and (max-width: 767px) {
+  .events_flex {
+    justify-content: center; } }
 
 .category_nav {
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
+  @media screen and (max-width: 767px) {
+    .category_nav {
+      justify-content: flex-start; } }
   .category_nav li {
-    margin: 0 5px; }
+    margin: 0 5px 10px; }
     .category_nav li a {
       display: block;
       padding: 10px 20px;
@@ -4324,7 +4369,7 @@ img {
       border-radius: 40px; }
       @media screen and (max-width: 1024px) {
         .category_nav li a {
-          width: 7em;
+          width: 6em;
           padding: 7px 10px; } }
       .category_nav li a:hover {
         background: #a78b5a;
