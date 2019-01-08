@@ -24,7 +24,8 @@
   &::after{
     content:"";
     display: block;
-    width:30%;
+    width: 29%;
+    margin: 0 20px 0px;
   }
   @include max-screen($bp-mobile) {
     justify-content: center;
@@ -43,14 +44,23 @@
       padding: 10px 20px;
       background: $color-light-gray;
       transition: 0.3s;
-      width: 8em;
+      width: auto;
+      min-width: 8em;
       text-align: center;
       border-radius: 40px;
       @include max-screen($bp-tablet) {
-        width: 6em;
+        width: auto;
+        min-width: 6em;
         padding: 7px 10px;
       }
     &:hover{
+        background: $color-brown;
+        color: $color-white;
+      }
+    }
+    &.end-event a{
+      background: $color-grayccc;
+      &:hover{
         background: $color-brown;
         color: $color-white;
       }

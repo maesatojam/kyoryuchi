@@ -173,6 +173,11 @@
 }
 .tag_news{background: $color-brown;}
 .tag_event{background: $color-green;}
+.tag_other{background: $color-event-blue;}
+.tag_end{
+  background: $color-grayccc;
+  color: $color-black;
+}
 .slide_txt{
   padding: 20px;
 }
